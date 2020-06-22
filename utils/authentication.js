@@ -6,7 +6,7 @@ const authenticate = async context => {
   console.log('called!')
   console.log(token ? '✅ Token Found' : '❌Token Not Foond')
   if (!token) {
-    console.log('RRRRRR')
+    console.log('🏠Redirecting to login')
     context.res.setHeader('location', '/login');
     context.res.statusCode = 302;
     context.res.end();
