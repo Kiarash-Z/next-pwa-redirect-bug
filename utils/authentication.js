@@ -3,7 +3,6 @@ import nextCookies from 'next-cookies';
 
 const authenticate = async context => {
   const { token } = nextCookies(context);
-  console.log('called!')
   console.log(token ? '✅ Token Found' : '❌Token Not Foond')
   if (!token) {
     console.log('🏠Redirecting to login')
